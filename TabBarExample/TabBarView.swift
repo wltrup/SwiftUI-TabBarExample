@@ -9,25 +9,22 @@ struct TabBarView: View {
     }
 
     var body: some View {
-        ZStack {
-            HStack(alignment: .lastTextBaseline) {
-                Spacer()
-                ForEach(self.viewModel.items) { item in
-                    Button(action: { self.viewModel.select(item) }) {
-                        VStack {
-                            if item.image != nil {
-                                Image(uiImage: item.image!)
-                                    .renderingMode(.template)
-                            }
-                            if item.title != nil {
-                                Text(item.title!)
-                            }
+        HStack(alignment: .lastTextBaseline) {
+            Spacer()
+            ForEach(self.viewModel.items) { item in
+                Button(action: { self.viewModel.select(item) }) {
+                    VStack {
+                        if item.image != nil {
+                            Image(uiImage: item.image!)
+                        }
+                        if item.title != nil {
+                            Text(item.title!)
                         }
                     }
-                    .padding(.horizontal, self.buttonHorizPadding)
-                    .frame(height: self.buttonHeight)
-                    Spacer()
                 }
+                .padding(.horizontal, self.buttonHorizPadding)
+                .frame(height: self.buttonHeight)
+                Spacer()
             }
         }
         .frame(height: barHeight)

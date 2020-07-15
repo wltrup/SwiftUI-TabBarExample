@@ -36,12 +36,10 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                VStack {
-                    Image(uiImage: tabBarViewModel.selectedItem.image!)
-                        .font(.largeTitle)
-                    Text(tabBarViewModel.selectedItem.title!)
-                        .font(.title)
-                }
+                Image(uiImage: tabBarViewModel.selectedItem.image!)
+                    .font(.largeTitle)
+                Text(tabBarViewModel.selectedItem.title!)
+                    .font(.title)
                 Spacer()
                 TabBarView(viewModel: tabBarViewModel)
                     .background(Color.white)
