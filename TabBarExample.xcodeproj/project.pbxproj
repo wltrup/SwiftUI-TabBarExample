@@ -13,6 +13,9 @@
 		3BE1DB1624BF7F2E004FCD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1DB1524BF7F2E004FCD9E /* Assets.xcassets */; };
 		3BE1DB1924BF7F2E004FCD9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1DB1824BF7F2E004FCD9E /* Preview Assets.xcassets */; };
 		3BE1DB1C24BF7F2E004FCD9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE1DB1A24BF7F2E004FCD9E /* LaunchScreen.storyboard */; };
+		3BE1DB2424BF8353004FCD9E /* BarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1DB2324BF8353004FCD9E /* BarItem.swift */; };
+		3BE1DB2624BF86B8004FCD9E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1DB2524BF86B8004FCD9E /* TabBarView.swift */; };
+		3BE1DB2824BF86E8004FCD9E /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1DB2724BF86E8004FCD9E /* TabBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3BE1DB1824BF7F2E004FCD9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BE1DB1B24BF7F2E004FCD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE1DB1D24BF7F2E004FCD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE1DB2324BF8353004FCD9E /* BarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarItem.swift; sourceTree = "<group>"; };
+		3BE1DB2524BF86B8004FCD9E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		3BE1DB2724BF86E8004FCD9E /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				3BE1DB0F24BF7F2D004FCD9E /* AppDelegate.swift */,
 				3BE1DB1124BF7F2D004FCD9E /* SceneDelegate.swift */,
 				3BE1DB1324BF7F2D004FCD9E /* ContentView.swift */,
+				3BE1DB2324BF8353004FCD9E /* BarItem.swift */,
+				3BE1DB2524BF86B8004FCD9E /* TabBarView.swift */,
+				3BE1DB2724BF86E8004FCD9E /* TabBarViewModel.swift */,
 				3BE1DB1524BF7F2E004FCD9E /* Assets.xcassets */,
 				3BE1DB1A24BF7F2E004FCD9E /* LaunchScreen.storyboard */,
 				3BE1DB1D24BF7F2E004FCD9E /* Info.plist */,
@@ -146,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE1DB2424BF8353004FCD9E /* BarItem.swift in Sources */,
 				3BE1DB1024BF7F2D004FCD9E /* AppDelegate.swift in Sources */,
 				3BE1DB1224BF7F2D004FCD9E /* SceneDelegate.swift in Sources */,
+				3BE1DB2624BF86B8004FCD9E /* TabBarView.swift in Sources */,
+				3BE1DB2824BF86E8004FCD9E /* TabBarViewModel.swift in Sources */,
 				3BE1DB1424BF7F2D004FCD9E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
