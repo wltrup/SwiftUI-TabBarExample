@@ -14,6 +14,7 @@ struct TabBarView: View {
                 .fill(Color.green)
                 .frame(width: buttonWidth)
                 .animatedCenterAlignment()
+                .animation(.spring(dampingFraction: animatedCenterAlignmentSpringDampingFraction))
             HStack(alignment: .lastTextBaseline) {
                 Spacer()
                 ForEach(viewModel.items) { item in
@@ -48,9 +49,7 @@ extension TabBarView {
     private func button(for item: BarItem) -> some View {
         Button(action: {
             if self.itemIsSelected(item) == false {
-                withAnimation(.spring(dampingFraction: self.animatedCenterAlignmentSpringDampingFraction)) {
-                    self.viewModel.select(item)
-                }
+                self.viewModel.select(item)
             }
         }) {
             VStack {
@@ -63,7 +62,6 @@ extension TabBarView {
             }
         }
         .frame(width: buttonWidth, height: buttonHeight)
-        .transition(AnyTransition.identity)
     }
 
 }
