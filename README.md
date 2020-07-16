@@ -5,7 +5,7 @@
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
 ![GitHub](https://img.shields.io/github/license/wltrup/SwiftUI-TabBarExample)
 
-![demo](https://github.com/wltrup/WTOpenSource/blob/master/gifs/TabBar.gif)
+![demo](TabBar.gif)
 
 ## Author ##
 
