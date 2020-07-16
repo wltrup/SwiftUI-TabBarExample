@@ -26,16 +26,15 @@ struct TabBarView: View {
                     }
                     Spacer()
                 }
-                Spacer()
             }
         }
         .frame(height: barHeight)
     }
 
     private let barHeight: CGFloat = 60
-    private let buttonWidth: CGFloat = 70
+    private let buttonWidth: CGFloat = 68
     private let buttonHeight: CGFloat = 60
-    private let buttonHorizPadding: CGFloat = 7
+    private let buttonHorizPadding: CGFloat = 5
     private let centerAlignmentSpringDampingFraction: Double = 0.6
 
 }
