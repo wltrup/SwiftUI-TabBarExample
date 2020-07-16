@@ -74,11 +74,11 @@ extension HorizontalAlignment {
             return d[HorizontalAlignment.center]
         }
     }
-    static let ha = HorizontalAlignment(HA.self)
+    fileprivate static let ha = HorizontalAlignment(HA.self)
 }
 
 extension Alignment {
-    static let animatedCenterAlignment = Alignment(horizontal: .ha, vertical: .center)
+    fileprivate static let animatedCenterAlignment = Alignment(horizontal: .ha, vertical: .center)
 }
 
 private struct AlignmentModifier: ViewModifier {
@@ -89,8 +89,8 @@ private struct AlignmentModifier: ViewModifier {
     }
 }
 
-private extension View {
-    func animatedCenterAlignment() -> some View {
+extension View {
+    fileprivate func animatedCenterAlignment() -> some View {
         self.modifier(AlignmentModifier())
     }
 }
