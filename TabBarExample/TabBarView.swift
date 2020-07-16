@@ -9,18 +9,18 @@ struct TabBarView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .animatedCenterAlignment) {
+        ZStack(alignment: .centerOfSelectedItem) {
             Rectangle()
                 .fill(Color.green)
                 .frame(width: buttonWidth)
-                .animatedCenterAlignment()
-                .animation(.spring(dampingFraction: animatedCenterAlignmentSpringDampingFraction))
+                .centerAlignment()
+                .animation(.spring(dampingFraction: centerAlignmentSpringDampingFraction))
             HStack(alignment: .lastTextBaseline) {
                 Spacer()
                 ForEach(viewModel.items) { item in
                     if self.itemIsSelected(item) {
                         self.button(for: item)
-                            .animatedCenterAlignment()
+                            .centerAlignment()
                     } else {
                         self.button(for: item)
                     }
@@ -36,7 +36,7 @@ struct TabBarView: View {
     private let buttonWidth: CGFloat = 70
     private let buttonHeight: CGFloat = 60
     private let buttonHorizPadding: CGFloat = 7
-    private let animatedCenterAlignmentSpringDampingFraction: Double = 0.6
+    private let centerAlignmentSpringDampingFraction: Double = 0.6
 
 }
 
@@ -78,7 +78,7 @@ extension HorizontalAlignment {
 }
 
 extension Alignment {
-    fileprivate static let animatedCenterAlignment = Alignment(horizontal: .ha, vertical: .center)
+    fileprivate static let centerOfSelectedItem = Alignment(horizontal: .ha, vertical: .center)
 }
 
 private struct AlignmentModifier: ViewModifier {
@@ -90,7 +90,7 @@ private struct AlignmentModifier: ViewModifier {
 }
 
 extension View {
-    fileprivate func animatedCenterAlignment() -> some View {
+    fileprivate func centerAlignment() -> some View {
         self.modifier(AlignmentModifier())
     }
 }
