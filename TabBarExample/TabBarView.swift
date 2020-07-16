@@ -36,7 +36,7 @@ struct TabBarView: View {
     private let buttonWidth: CGFloat = 70
     private let buttonHeight: CGFloat = 60
     private let buttonHorizPadding: CGFloat = 7
-    private let animatedCenterAlignmentSpringDampingFraction: Double = 0.65
+    private let animatedCenterAlignmentSpringDampingFraction: Double = 0.6
 
 }
 
