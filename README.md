@@ -7,10 +7,6 @@
 
 ![demo](TabBar.gif)
 
-## Author ##
-
-Wagner Truppel, trupwl@gmail.com
-
 ## License ##
 
 **TabBarExample** is available under the MIT license. See the LICENSE file for
